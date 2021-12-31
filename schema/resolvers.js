@@ -13,7 +13,7 @@ const resolvers = {
     },
     user: (parent, args) => {
       const id = args.id;
-      const user = _.find(UserList, { id });
+      const user = _.find(UserList, { id: Number(id) });
       return user;
     },
   },

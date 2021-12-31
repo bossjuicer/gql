@@ -20,6 +20,7 @@ const typeDefs = gql`
   type Query {
     users: [User!]!
     friend: [Friends]
+    user(id:ID!): User! 
   }
 `;
 
